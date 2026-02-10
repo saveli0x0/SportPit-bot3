@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    color: #ccff00;
+}
+
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-container button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #ccff00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reg {
+    background: #ccff00;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter-section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 25px;
+    margin: 5px;
+    border: 2px solid #1a1a1a;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.active,
+.btn:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.buy-btn {
+    background: #ccff00;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+#imggf {
+    display: block;
+    object-fit: contain;
+}
+
+#BCS {
+    display: block;
+    object-fit: contain;
+}
+
+#prot{
+    display: block;
+    object-fit: contain;
+}
+
+#mut{
+   display: block;
+   object-fit: contain;
+}
+
+#amino{
+    display: block;
+   object-fit: contain;
+}
+
+#aminoenergy{
+    display: block;
+    object-fit: contain;
+}
+
+#bcaa{
+    display: block;
+    object-fit: contain;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.buy-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.buy-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    transition: left 0.3s ease;
+    z-index: -1;
+    
+}
+
+.buy-btn:hover::before {
+    left: 0;
+}
+
+.buy-btn:hover {
+    color: white;
+}
+
+
